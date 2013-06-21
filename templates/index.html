@@ -1,0 +1,9 @@
+{% include 'header.html' %}
+		<h4>You know {{num_of_words}} words</h4>
+		<form action="/highlight" method="post">
+			<button type="submit" value="highlight">Highlight New Words</button>
+			<br />
+			<input id="textbox" type="text" name="complete_text">
+		</form>
+	</div>
+{% include 'footer.html' %}

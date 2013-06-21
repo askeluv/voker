@@ -1,0 +1,9 @@
+{% include 'header.html' %}
+	<p>Saved {{num}} new words! Well done!</p>
+	<ul>
+		{% for w in new_words %}
+		<li>{{w}}</li>
+		{% endfor %}
+	</ul>
+	<a href="/">Back</a>
+{% include 'footer.html' %}

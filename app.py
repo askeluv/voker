@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import sys
 from flask import Flask, render_template, redirect, request
 from wordbase import WordBase

@@ -1,11 +1,10 @@
 {% include 'header.html' %}
 
 	<form action="/save" method="post">
-		<input type="text" id="hidden_text" value="{% for (w,is_known) in words if not is_known %} {{w}} {% endfor %}" name="new_words" readonly>
+		<input type="text" class="display_none" id="hidden_text" value="{% for (w,is_known) in words if not is_known %} {{w}} {% endfor %}" name="new_words">
 		<button type="submit">Save New Words</button>
 	</form>
-	<div id="hidden_text">
-	</div>
+
 	<div id="textbox">
 		{% for (w,is_known) in words %}
 		<span class="{{w}} {{is_known}}">{{w}}</span>

@@ -5,8 +5,6 @@
 #textbox {
 	width: 50%;
 	height: 50%;
-	text-align: top;
-	vertical-align: top;
 	border: 1px solid;
 }
 
@@ -14,6 +12,6 @@ button {
 	margin: 10px;
 }
 
-#hidden_text {
+.display_none {
 	display: none;
 }
